@@ -1,0 +1,13 @@
+body {
+    background: url('images/Instagram_\ georginadx\ drawn\ by\ meee.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+.container {
+    background-color: #3aa33a7e;
+    border-radius: 30px;
+ }

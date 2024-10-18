@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/logo-icon.png">
+    <title>Leefs</title>
+    <link rel="stylesheet" href="leefs_website.css">
+    <link rel="stylesheet" href="leefs_website2.css">
+</head>
+<body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+                <!-- Logo -->
+                <a href="#home"><img src="images/logo.png" alt="Leefs Logo" class="logo"></a>
+                
+                <!-- Navbar Links -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+    
+                <!-- Search Box -->
+                <div class="search-container">
+                    <input type="text" placeholder="Search here" class="search-box">
+                    <div class="search-icon"></div>
+                </div>
+    
+                <!-- Account Icon -->
+                <a href="login.html" target="_blank"><div class="account-icon"></div></a>
+            </div>
+        </nav>
+    
+        <!-- Home -->
+        <section class="home" id="home">
+            <img src="images/green-background.jpg" alt="Home" class="home-img">
+            <div class="home-content">
+                <h1><b>Why Wait<br><span>Plant</span> a new tree</b></h1>
+                <p>The best time to plant a tree was 20 years ago, Time never stops,<br>feel free, plant a new tree now!</p>
+                <a href="#shop" class="btn">Discover</a>
+            </div>
+        </section>
+
+    <!-- Popular Products -->
+    <section class="popular-products" id="shop">
+        <h1>Our Popular Products</h1>
+        <div class="container">
+            <div class="card-container">
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <div class="card-heart" onclick="toggleHeart(this)"></div>
+                        <img src="images/spider-plant.png" alt="Spider Plant" class="product-image">
+                    </div>
+                    <h4>Spider Plant</h4>
+                    <p>$30.00</p>
+                </div>
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <div class="card-heart" onclick="toggleHeart(this)"></div>
+                        <img src="images/lady-palm.png" alt="Lady Plant" class="product-image">
+                    </div>
+                    <h4>Lady Plant</h4>
+                    <p>$19.55</p>
+                </div>
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <div class="card-heart" onclick="toggleHeart(this)"></div>
+                        <img src="images/jade-plant.png" alt="Jade Plant" class="product-image">
+                    </div>
+                    <h4>Jade Plant</h4>
+                    <p>$23.00</p>
+                </div>
+                <div class="product-wrapper">
+                    <div class="product-card">
+                        <div class="card-heart" onclick="toggleHeart(this)"></div>
+                        <img src="images/snake-plant.png" alt="Snake Plant" class="product-image">
+                    </div>
+                    <h4>Snake Plant</h4>
+                    <p>$50.55</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Shop by Categories -->
+    <h2>Shop By Categories</h2>
+    <div class="shop-by-categories">
+        <div class="large-box">
+            <img src="images/philodendron2.png" alt="Round potted Plants">
+            <p>Round<br>Potted Plants</p>
+        </div>
+        <div class="small-boxes">
+            <div class="small-box" id="top_box">
+                <p>Square<br>Potted Plants</p>
+                <img src="images/MarginataTips-768x768.png" alt="Square Potted Plants">
+            </div>
+            <div class="small-box" id="down_box">
+                <p>All About<br>Cactus</p>
+                <img src="images/agave.png" alt="All About Cactus">
+            </div>
+        </div>
+    </div>
+
+    <!-- Why People Choose Us -->
+    <div class="section2">
+        <h2>Why People Choose Us?</h2>
+        <div class="info-squares">
+            <div class="square">
+                <h3>Beautiful Plants</h3>
+                <p>Our plants are sourced from local<br>growers to ensure the highest quality<br>and to support family-owned<br>businesses.</p>
+            </div>
+            <div class="square">
+                <h3>Timeless Planters</h3>
+                <p>Our ceramic planters are designed<br>by out team to complement a range<br>of styles, and are manufactured by<br>a pottery company.</p>
+            </div>
+            <div class="square">
+                <h3>Support</h3>
+                <p>Our care library includes specific<br>care instructions for each plant and<br>our monthly workshops help with<br>all aspects of plant parenthood.</p>
+            </div>
+        </div>
+
+        <div class="symbols">
+            <div class="symbol-item">
+                <img src="images/fast-delivery-icon.png" alt="Fast Delivery">
+                <p>Fast Delivery</p>
+            </div>
+            <div class="symbol-item">
+                <img src="images/plant-care-icon.png" alt="Plant Care Support">
+                <p>Plant Care Support</p>
+            </div>
+            <div class="symbol-item">
+                <img src="images/health-icon.png" alt="Health Guarantee">
+                <p>Health Guarantee</p>
+            </div>
+            <div class="symbol-item">
+                <img src="images/support-icon.png" alt="All Day Support">
+                <p>All Day Support</p>
+            </div>
+        </div>
+
+        <div class="know-more">
+            <button>Know More</button>
+        </div>
+    </div>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-signup">
+        <div class="container">
+            <h1>Join us for care tips<br>& <span>get 20% discount</span> on your first order</h1>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Join Us</button></a>
+            </form>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <div class="blog-section">
+        <h1>Read Our Blog</h1>
+        <div class="see-all-container">
+            <a href="https://www.ledevoir.com/motcle/plante" class="see-all">See all</a>
+           
+    
+    </div>
+    </div>
+    
+        </div>
+        <div class="blog-container">
+            <!-- Blog Post 1 -->
+            <div class="blog-card">
+                <img src="images\404 Not Found.jfif" alt="Indoor Plants">
+                <div class="blog-overlay">
+                <div class="blog-date">10 January 2024</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Beginner's Guide To Maintain<br>Indoor Plants</h3>
+                    <a href="https://www.ledevoir.com/motcle/plante" class="read-more">Read More</a>
+                </div>
+                </div>
+            </div>
+    
+            <!-- Blog Post 2 -->
+            <div class="blog-card">
+                <img src="images\house plants_ This arrangement takes up little space could be in your workstation _reading nook corner by a window_.jfif" alt="Home Garden">
+                <div class="blog-overlay">
+                <div class="blog-date">18 October 2024</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Buying Best For Your<br>Home Garden</h3>
+                    <a href="https://www.ledevoir.com/motcle/plante" class="read-more" target="_blank">Read More</a>
+                </div>
+                </div>
+            </div>
+    
+            <!-- Blog Post 3 -->
+            <div class="blog-card">
+                <img src="images\download (8).jfif" alt="Tree Campaign">
+                <div class="blog-overlay">
+                <div class="blog-date">1 June 2024</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Plant A New Tree<br>Campaign</h3>
+                    <a href="https://www.ledevoir.com/motcle/plante" class="read-more" target="_blank">Read More</a>
+                </div>
+            </div>
+            </div>
+    
+            <!-- Blog Post 4 -->
+            <div class="blog-card">
+                <img src="images\download (9).jfif" alt="Take Care of Plants">
+                <div class="blog-overlay">
+                <div class="blog-date">27 April 2024</div>
+                <div class="blog-content">
+                    <h3 class="blog-title">Know How To Take Care<br>Of Your Plants</h3>
+                    <a href="https://www.ledevoir.com/motcle/plante" class="read-more" target="_blank">Read More</a>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Footer -->
+    <section class="footer text-light" id="contact-us">
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="#home"><img src="images/logo.png" alt="Leefs Logo" class="logo"></a>
+                <p class="footer-description">Leefs is a popular e-commerce
+                    site exclusively for plant and plant care.<br>
+                    We provide the best for plants and
+                    also provide best service
+                </p>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/basma_osama22/" target="_blank"><img src="images/insta.png" alt="instagram"></a>
+                    <a href="https://www.facebook.com/bosy.dyana.507" target="_blank"><img src="images/face.png" alt="facebook"></a>
+                    <a href="https://www.linkedin.com/in/basma-osama-3ba012267/" target="_blank"><img src="images/linkedin.png" alt="linkedin"></a>
+                </div>
+            </div>
+    
+            <div class="footer-col">
+                <h4 class="lnk">Help</h4>
+                <ul class="footer-links">
+                    <li><a href="#about">Privacy Police</a></li>
+                    <li><a href="#">Shipping & Delivery</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                    <li><a href="#"> Track your Order</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-col">
+                <h4 class="lnk">Read</h4>
+                <ul class="footer-links">
+                    <li><a href="https://www.gardendesign.com/houseplants/best-indoor.html" target="_blank">Indoor Plants</a></li>
+                    <li><a href="https://www.thespruce.com/best-patio-plants-4588544" target="_blank">Outdoor Plants</a></li>
+                    <li><a href="https://justhouseplants.com/pet-friendly-plants/" target="_blank">Pet Friendly</a></li>
+                    <li><a href="https://leafyplace.com/types-of-cacti/" target="_blank">Cactus Plants</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4 class="lnk">Support</h4>
+                <ul class="footer-links">
+                    <li><a href="feedback.html" target="_blank">Feedback</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Download App</a></li>
+                    <li><a>Terms Condition</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="footer-row">
+        <p class="reserved">@Leefs - All rights reserved</p>
+        <p>Privacy</p>
+        <p>Security</p>
+        <p>Terms</p>
+    </div>
+
+    <script src="leefs_website.js"></script>
+</body>
+</html>
